@@ -39,6 +39,6 @@ module.exports = exports = function events(schema, options) {
 
   schema.post('remove', function() {
     var model = this.model(this.constructor.modelName);
-    model.emit('remove', this);
+    model.emit('removed', this);
   });
 }
